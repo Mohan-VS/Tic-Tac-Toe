@@ -6,7 +6,6 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.Toast;
-
 import com.google.android.gms.appindexing.Action;
 import com.google.android.gms.appindexing.AppIndex;
 import com.google.android.gms.common.api.GoogleApiClient;
@@ -15,10 +14,6 @@ public class MainActivity extends AppCompatActivity {
 
     Button b1, b2, b3, b4, b5, b6, b7, b8, b9;
     int turn;
-    /**
-     * ATTENTION: This was auto-generated to implement the App Indexing API.
-     * See https://g.co/AppIndexing/AndroidStudio for more information.
-     */
     private GoogleApiClient client;
 
     @Override
@@ -191,101 +186,78 @@ public class MainActivity extends AppCompatActivity {
         h=b8.getText().toString();
         i=b9.getText().toString();
 
-        if(a.equals("X") && b.equals("X") && c.equals("X"))
-        {
+        if(a.equals("X") && b.equals("X") && c.equals("X")){
             Toast.makeText(MainActivity.this,"Winner is X",Toast.LENGTH_LONG).show();
             end=true;
         }
-        if(a.equals("X") && d.equals("X") && g.equals("X"))
-        {
+        if(a.equals("X") && d.equals("X") && g.equals("X")){
             Toast.makeText(MainActivity.this,"Winner is X",Toast.LENGTH_LONG).show();
             end=true;
         }
-        if(a.equals("X") && e.equals("X") && i.equals("X"))
-        {
+        if(a.equals("X") && e.equals("X") && i.equals("X")){
             Toast.makeText(MainActivity.this,"Winner is X",Toast.LENGTH_LONG).show();
             end=true;
         }
-        if(b.equals("X") && e.equals("X") && h.equals("X"))
-        {
+        if(b.equals("X") && e.equals("X") && h.equals("X")){
             Toast.makeText(MainActivity.this,"Winner is X",Toast.LENGTH_LONG).show();
             end=true;
         }
-        if(c.equals("X") && f.equals("X") && i.equals("X"))
-        {
+        if(c.equals("X") && f.equals("X") && i.equals("X")){
             Toast.makeText(MainActivity.this,"Winner is X",Toast.LENGTH_LONG).show();
             end=true;
         }
-        if(d.equals("X") && e.equals("X") && f.equals("X"))
-        {
+        if(d.equals("X") && e.equals("X") && f.equals("X")){
             Toast.makeText(MainActivity.this,"Winner is X",Toast.LENGTH_LONG).show();
             end=true;
         }
-        if(g.equals("X") && h.equals("X") && i.equals("X"))
-        {
+        if(g.equals("X") && h.equals("X") && i.equals("X")){
             Toast.makeText(MainActivity.this,"Winner is X",Toast.LENGTH_LONG).show();
             end=true;
         }
-        if(c.equals("X") && e.equals("X") && g.equals("X"))
-        {
+        if(c.equals("X") && e.equals("X") && g.equals("X")){
             Toast.makeText(MainActivity.this,"Winner is X",Toast.LENGTH_LONG).show();
             end=true;
         }
-
-
 
         //Next checking condition for second player 'O'
-        if(a.equals("O") && b.equals("O") && c.equals("O"))
-        {
+        if(a.equals("O") && b.equals("O") && c.equals("O")){
             Toast.makeText(MainActivity.this,"Winner is O",Toast.LENGTH_LONG).show();
             end=true;
         }
-        if(a.equals("O") && d.equals("O") && g.equals("O"))
-        {
+        if(a.equals("O") && d.equals("O") && g.equals("O")){
             Toast.makeText(MainActivity.this,"Winner is O",Toast.LENGTH_LONG).show();
             end=true;
         }
-        if(a.equals("O") && e.equals("O") && i.equals("O"))
-        {
+        if(a.equals("O") && e.equals("O") && i.equals("O")){
             Toast.makeText(MainActivity.this,"Winner is O",Toast.LENGTH_LONG).show();
             end=true;
         }
-        if(b.equals("O") && e.equals("O") && h.equals("O"))
-        {
+        if(b.equals("O") && e.equals("O") && h.equals("O")){
             Toast.makeText(MainActivity.this,"Winner is O",Toast.LENGTH_LONG).show();
             end=true;
         }
-        if(c.equals("O") && f.equals("O") && i.equals("O"))
-        {
+        if(c.equals("O") && f.equals("O") && i.equals("O")){
             Toast.makeText(MainActivity.this,"Winner is O",Toast.LENGTH_LONG).show();
             end=true;
         }
-        if(d.equals("O") && e.equals("O") && f.equals("O"))
-        {
+        if(d.equals("O") && e.equals("O") && f.equals("O")){
             Toast.makeText(MainActivity.this,"Winner is O",Toast.LENGTH_LONG).show();
             end=true;
         }
-        if(g.equals("O") && h.equals("O") && i.equals("O"))
-        {
+        if(g.equals("O") && h.equals("O") && i.equals("O")){
             Toast.makeText(MainActivity.this,"Winner is O",Toast.LENGTH_LONG).show();
             end=true;
         }
-        if(c.equals("O") && e.equals("O") && g.equals("O"))
-        {
+        if(c.equals("O") && e.equals("O") && g.equals("O")){
             Toast.makeText(MainActivity.this,"Winner is O",Toast.LENGTH_LONG).show();
             end=true;
         }
 
-        if(end){
-            b1.setEnabled(false);
-            b2.setEnabled(false);
-            b3.setEnabled(false);
-            b4.setEnabled(false);
-            b5.setEnabled(false);
-            b6.setEnabled(false);
-            b7.setEnabled(false);
-            b8.setEnabled(false);
-            b9.setEnabled(false);
+        if(end)
+        {
+            b1.setEnabled(false); b2.setEnabled(false); b3.setEnabled(false);
+            b4.setEnabled(false); b5.setEnabled(false); b6.setEnabled(false);
+            b7.setEnabled(false); b8.setEnabled(false); b9.setEnabled(false);
         }
     }
 }
